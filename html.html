@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> YouTube Bootstrap 3 Helper Plugin</title>  
+    <meta charset="utf-8">    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+     <!--[if IE]>
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta http-equiv="Page-Enter" content="blendTrans(duration=0)" />
+      <meta http-equiv="Page-Exit" content="blendTrans(duration=0)" />
+    <![endif]-->    
+    <meta name="author" content="Jeremy Edgar Kenedy" > 
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" >   
+    <link rel="stylesheet" type="text/css" href="style.css" >
+  </head>
+  <body role="application">
+
+
+    <div class="container theme-showcase" role="main">
+      <div class="row">
+        <div class="col-sm-12">
+            <a href="#" class="" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/loFtozxZG0s" >
+              <div class="video-container">                
+                <img src="http://img.youtube.com/vi/loFtozxZG0s/1.jpg" >
+                <span title="play icon"></span>
+              </div>
+            </a>
+        </div>
+      </div>
+    </div> 
+
+
+    <div class="container theme-showcase" role="main">
+      <div class="row">
+        <div class="col-sm-12">
+            <a href="#" class="btn btn-default" data-toggle="modal" data-target="#videoModal" data-theVideo="http://www.youtube.com/embed/XY6RHeI6KB8">VIDEO</a>
+        </div>
+      </div>
+    </div> 
+
+    <div class="modal fade" id="videoModal" tabindex="-1" role="dialog" aria-labelledby="videoModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <div>
+              <iframe width="100%" height="350" src=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.1.min.js"></script>    
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="youTubeHelper.js"></script>
+  </body>
+</html>
+
